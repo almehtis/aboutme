@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+h1 {
+    color:#FFB6C1;
+    font-size: 6em;
+    font-family: 'Arimo', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 10px;
+}
+
+body {
+  background-image: url(images/27095088603_c8261e12f5_b.jpg);
+  background-size: cover;
+}
+
