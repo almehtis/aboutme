@@ -8,27 +8,60 @@ body {
 background: #e7e7e7;
 }
 
-
 header {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    font-size: 2em;
-    border-top: solid black 2px;
-    padding: 5px;
-    border-spacing: 5px;
-    margin-block-start: 10px;
-    margin-inline-start: 10px;
-    font-weight: bold;
 }
 
-header > p {
+header > h1 {
+    border-top: solid black 2px;
+    padding: 15px;
     flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    margin-inline-start: 20px;
 }
 
 header > a {
+  border-top: solid black 2px;
+  padding: 15px;
   text-decoration: none;
   color: black;
-  
+  font-size: 20px;
+  margin-inline-end: 20px;
+  font-weight: bold;
 }
 
+.email {
+  margin-block-start: 350px;
+  padding: 15px;
+  margin-inline-start: 20px;
+ }
+
+ .github {
+  margin-block-start: 350px;
+  padding: 15px;  
+  
+ }
+
+.telegram {
+  margin-block-start: 350px;
+  padding: 15px;  
+  margin-inline-end: 20px;
+}
+
+ footer {
+   font-weight: bold;
+   border-bottom: solid black 2px;
+   margin-left: 20px;
+   margin-right: 20px;
+   padding: 5px;
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+   justify-content: space-around;
+ }
+
+ 
+ 
