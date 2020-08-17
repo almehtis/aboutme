@@ -1,6 +1,6 @@
 html {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #000;
   }
   
   body {
@@ -8,8 +8,13 @@ html {
   }
   
   section {
-      font-size: 28px;
-      font-weight: bold;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: regular;
+    margin-inline-start: 10px;
   }
 
   
