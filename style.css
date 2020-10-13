@@ -1,41 +1,41 @@
 html {
   box-sizing: border-box;
-  font-family: 'IBM Plex Mono', monospace;
-  color: #000;
-  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
   }
 
   body {
-    background: #FFFFFF;
+    background: #ffff;
+    font-size: 18px;
   }
 
-  .wrapper {
-    margin-inline-start: 37%;
+  @font-face {
+    font-family: "Century Gothic"; /* Имя шрифта */
+    src: url(fonts/GOTHIC.TTF); /* Путь к файлу со шрифтом */
+  }
+
+  #wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name {
     margin-block-start: 10%;
+    margin-inline-start: 6%;
+    font-size: 4rem;
   }
 
-  .page {
-    display: flex;
-    flex-direction: column;
-    margin-inline-start: 10px;
+  .description img {
+    margin-block-start: 20%;
+    margin-inline-start: 30%;
+    width: 35%;
+    background-color: #c3a5cb; 
+    border-radius: 50%;
+    padding: 5%;
   }
 
-  .js {
-    display: flex;
-    flex-direction: column;
-    margin-inline-start: 37%;
-    margin-block-start: 20px;
+  img:hover {
+    transform: rotate(85deg)
   }
 
-  a {
-    text-decoration: none;
-    color: #CDB3D4;
-  }
+ 
 
-  .link:hover {
-   color: #000;
-  }
-
-  .a:visited {
-    color: #6F5F90;
-  }
