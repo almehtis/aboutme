@@ -62,17 +62,16 @@ body {
 
 .hand img {
   position: absolute;
-  margin-inline-start: 70%;
+  margin-inline-start: 73%;
   margin-block-start: 1%;
-  width: 175px;
+  width: 150px;
   /*background-color: #e8cbe0;*/
-  padding: 20px;
-
+  padding: 20px
 }
 
-img:hover {
-  /*transform: rotate(80deg);*/
-}
+/*img:hover {
+  transform: rotate(80deg);
+}*/
 
 .second-letter {
   text-decoration: underline;
