@@ -1,41 +1,74 @@
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Century Gothic"; /* Имя шрифта */
+  src: url(fonts/GOTHIC.TTF);
   }
 
-  body {
-    background: #ffff;
-    font-size: 18px;
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 4rem;
+      margin-block-start: auto;
+      margin-inline-start: 1%;
   }
+}
 
-  @font-face {
-    font-family: "Century Gothic"; /* Имя шрифта */
-    src: url(fonts/GOTHIC.TTF); /* Путь к файлу со шрифтом */
+@media screen and (min-width: 992px) {
+  h1 {
+  font-size: 2rem;
   }
+}
 
-  #wrapper {
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  h1 {
+  font-size: 7.8rem;
   }
+}
 
-  .name {
-    margin-block-start: 10%;
-    margin-inline-start: 6%;
-    font-size: 4rem;
-  }
+body {
+  background: #ffff;
+  font-size: 18px;
+  overflow: hidden;
+}
 
-  .description img {
-    margin-block-start: 20%;
-    margin-inline-start: 30%;
-    width: 35%;
-    background-color: #c3a5cb; 
-    border-radius: 50%;
-    padding: 5%;
-  }
 
-  img:hover {
-    transform: rotate(85deg)
-  }
+#wrapper {
+  display: flex;
+  /*justify-content: space-between;*/
+  background-color: a
+}
 
- 
+.name {
+  position: absolute;
+  margin-block-start: 13%;
+  margin-inline-start: 4%;
+  z-index: 1;
+  background-color: #c9c9ff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.about {
+  position: absolute;
+  margin-block-start: 17%;
+  margin-inline-start: 37%;
+  font-size: 2rem;
+  background-color: #cfe2c1;
+  z-index: 2;
+  padding: 20px;
+}
+
+
+.hand img {
+  position: absolute;
+  margin-inline-start: 75%;
+  margin-block-start: 3%;
+  width: 175px;
+  background-color: #e8cbe0;;
+}
+
+img:hover {
+  background-color: #dbbcd2;
+}
+
+
+/*background-color: #e8cbe0; */
