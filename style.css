@@ -5,7 +5,7 @@ html {
   }
 
 @media screen and (max-width: 768px) {
-  h1 {
+  p {
       font-size: 4rem;
       margin-block-start: auto;
       margin-inline-start: 1%;
@@ -28,6 +28,7 @@ body {
   background: #ffff;
   font-size: 18px;
   overflow: hidden;
+
 }
 
 
@@ -37,22 +38,23 @@ body {
   background-color: a
 }
 
-.name {
+.name p {
   position: absolute;
-  margin-block-start: 13%;
-  margin-inline-start: 4%;
+  margin-block-start: 32%;
+  margin-inline-start: 3%;
   z-index: 1;
-  background-color: #c9c9ff;
+  /*background-color: #c9c9ff;*/
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 5rem;
 }
 
 .about {
   position: absolute;
-  margin-block-start: 17%;
-  margin-inline-start: 37%;
+  margin-block-start: 13%;
+  margin-inline-start: 40%;
   font-size: 2rem;
-  background-color: #cfe2c1;
+  /*background-color: #cfe2c1;*/
   z-index: 2;
   padding: 20px;
 }
@@ -60,15 +62,22 @@ body {
 
 .hand img {
   position: absolute;
-  margin-inline-start: 75%;
-  margin-block-start: 3%;
+  margin-inline-start: 70%;
+  margin-block-start: 1%;
   width: 175px;
-  background-color: #e8cbe0;;
+  /*background-color: #e8cbe0;*/
+  padding: 20px;
+
 }
 
 img:hover {
-  background-color: #dbbcd2;
+  /*transform: rotate(80deg);*/
 }
+
+.second-letter {
+  text-decoration: underline;
+}
+
 
 
 /*background-color: #e8cbe0; */
