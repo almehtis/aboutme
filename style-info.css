@@ -1,16 +1,206 @@
 html {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  body {
-    background: #e7e7e7;
-  }
-  
-  section {
-      font-size: 28px;
-      font-weight: bold;
-  }
+  background-color: #f4f4f4;
+}
 
+.icon {
+  width: 30em;
+  height: 30em;
+  box-shadow: 0 0 5px #262626;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
+  transition:0.2s ease box-shadow;
+  margin:0 auto;
+  /*border: 0.5px solid #262626;*/
+  border-radius: 5px;
+}
+
+#bottom {
+  background: #262626;
+  width: 70%;
+  height: 32%;
+  position: fixed;
+  top: 0;
+  left: 9%;
+  z-index: -1;
+  box-shadow: inset 1px 1px 10px black;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   
+}
+
+.icon:hover {
+  box-shadow: 0 0 5px #262626;
+}
+.icon * {
+  box-sizing:border-box;
+}
+.icon {
+  background: #81b29a;
+}
+/* floppy metal plate */
+.icon-floppy:after {
+  position:absolute;
+  top: 6%;
+  background:#262626;
+  height: 20%;
+  width: 10%;
+  right: 30%;
+  content:"";
+  transition: 0.3s ease all;
+  z-index: 6;
+  box-shadow: inset 1px 1px 10px black;
+}
+
+.icon-floppy:before {
+  position:absolute;
+  top: -1%;
+  background: #262626;
+  height: 33%;
+  width: 50%;
+  left: 29%;
+  margin-right:-.5em;
+  content:"";
+  border-bottom-right-radius: 7px;
+  z-index: 5;
+  transition: 0.3s ease all;
+  box-shadow: -5px 0px 10px -3px black;
+}
+/* floppy label */
+.icon-floppy span {
+  position: fixed;
+  text-decoration: underline;
+  width: 80%;
+  height: 55%;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  height: 65%;
+  background: #f4f4f4;
+  z-index: 4;
+  border-radius: 7px;
+}
+
+#span-bottom {
+  background: #81b29a;
+  width: 82%;
+  top: 35%;
+  left: 9%;
+  height: 65%;
+  z-index: 3;
+  position: fixed;
+  box-shadow: inset 1px 1px 10px black;
+}
+
+.icon-floppy span:after {
+  position:relative;
   
+  height:0.5px;
+  display:block;
+  content:"";
+  width:100%;
+  margin-top:.25em;
+  clear:both;
+  overflow:hidden;
+  line-height:1px;
+  bottom:1em;
+}
+.icon-floppy span:before {
+  position:relative;
+  
+  height:0.5px;
+  display:block;
+  content:"";
+  width:100%;
+  margin-top:.25em;
+  clear:both;
+  overflow:hidden;
+  line-height:1px;
+}
+/* hover slide effect */
+.icon-floppy:hover:before {
+  left: 9%;
+  margin-right:-.3em;
+  transition: box-shadow 0.3s ease all;
+  box-shadow: 5px 0px 10px -3px black;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 0px;  
+  border-bottom-right-radius: 0px; 
+  border-top-left-radius: 0px;  
+}
+
+.icon-floppy:hover:after {
+  right: 47%;
+}
+
+/* icon wrapper for this presentation only */
+.icon-wrapper {
+text-align:center;
+padding:20% 0 20% 0;
+
+}
+/* to show the icon zoomed/enlarged */
+#outside {
+  width: 120px;
+  height: 35px;
+  background-color:#f4f4f4;
+  position: fixed;
+  top: 4%;
+  right: 28%;
+  transform: rotate(0.1turn);
+  z-index: 5;
+}
+
+#inside {
+  width: 20px;
+  height: 20px;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 87%;
+  right: 2.5%;
+  box-shadow: inset 1px 1px 5px black;
+  z-index: 5;
+}
+
+#inside2 {
+  width: 20px;
+  height: 20px;
+  background-color:#262626;
+  position: fixed;
+  top: 87%;
+  left: 2.5%;
+  box-shadow: inset 1px 1px 5px black;
+  z-index: 5;
+}
+
+/*#outside2 {
+  height: 0; 
+  width: 30px;
+  border-bottom: 100px solid #f4f4f4;
+  border-left: 50px solid transparent;
+  border-right: 10px solid transparent;
+  position: fixed;
+  top: -8%;
+  left: 35%;
+  transform: rotate(0.5turn);
+  z-index: 2;
+}
+
+#outside3 {
+  height: 0; 
+  width: 30px;
+  border-bottom: 100px solid #f4f4f4;
+  border-left: 50px solid transparent;
+  border-right: 10px solid transparent;
+  position: fixed;
+  top: -8%;
+  left: 58%;
+  transform: rotate(0.5turn);
+  z-index: 1;
+}*/
+
+.name {
+  color: #f4f4f4;
+}
