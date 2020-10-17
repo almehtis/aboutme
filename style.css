@@ -84,7 +84,7 @@ img {
 }
 
 .menu a:hover {
-  transition: background-color 1.5s ease;
+  transition: background-color 1.0s ease;
   background-color: #81b29a;
 }
 
@@ -138,7 +138,7 @@ img {
 }*/
 
 .first:hover {
-  transition:  color 1.5s ease;
+  transition:  color 1.0s ease;
   color: #81b29a;
 
 }

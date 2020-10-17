@@ -1,11 +1,38 @@
 html {
-  background-color: #f4f4f4;
+  background-color:#f4f4f4;
+  font-family: "Century Gothic"; /* Имя шрифта */
+  src: url(fonts/GOTHIC.TTF);
+  overflow: hidden;
+}
+
+/*.icon-wrapper {
+  outline: 1px 3px solid #666;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  box-shadow: 1px 1px 10px 1px #262626;
+  border-radius: 10px;
+}*/
+
+.icon-wrapper a {
+  text-decoration: none;
+  position: fixed;
+  top: 40%;
+  font-weight: 600;
+  left: 14%;
+  color: #262626;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  transition: color 1.0s ease;
+  color: #81b29a;
 }
 
 .icon {
-  width: 30em;
-  height: 30em;
-  box-shadow: 0 0 5px #262626;
+  width: 20em;
+  height: 20em;
+  /*box-shadow: 0 0 5px #262626;*/
   position: absolute;
   top: 45%;
   left: 50%;
@@ -14,89 +41,108 @@ html {
   transition:0.2s ease box-shadow;
   margin:0 auto;
   /*border: 0.5px solid #262626;*/
-  border-radius: 5px;
+  border-radius: 5px; 
+  /*box-shadow: 1px 0px 2px 0 #262626;*/
+  border: 2px solid #262626;
 }
+
 
 #bottom {
-  background: #262626;
-  width: 70%;
-  height: 32%;
+  background: #f4f4f4;
+  width: 69%;
+  height: 34.5%;
   position: fixed;
-  top: 0;
-  left: 9%;
+  top: 0%;
+  left: 10%;
   z-index: -1;
-  box-shadow: inset 1px 1px 10px black;
+  /*box-shadow: inset 1px 1px 10px black;*/
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  
+  border: 2px solid #262626;
 }
 
-.icon:hover {
+/*.icon:hover {
   box-shadow: 0 0 5px #262626;
-}
+}*/
+
 .icon * {
   box-sizing:border-box;
 }
 .icon {
-  background: #81b29a;
+  background-color:#f4f4f4; 
 }
 /* floppy metal plate */
 .icon-floppy:after {
   position:absolute;
-  top: 6%;
-  background:#262626;
-  height: 20%;
-  width: 10%;
-  right: 30%;
+  top: 3%;
+  background: #f4f4f4;
+  height: 26%;
+  width: 12%;
+  right: 32%;
   content:"";
-  transition: 0.3s ease all;
+  transition: 0.3s ease-out all;
   z-index: 6;
-  box-shadow: inset 1px 1px 10px black;
+  /*box-shadow: inset 1px 1px 10px black;*/
+  border: 2px solid #262626;
 }
 
 .icon-floppy:before {
   position:absolute;
   top: -1%;
-  background: #262626;
-  height: 33%;
-  width: 50%;
-  left: 29%;
+  background-color: #f4f4f4;
+  /*background-image: linear-gradient(315deg, #262626 0%, #81b29a 74%);*/
+  height: 34%;
+  width: 54%;
+  left: 24%;
   margin-right:-.5em;
   content:"";
   border-bottom-right-radius: 7px;
   z-index: 5;
-  transition: 0.3s ease all;
-  box-shadow: -5px 0px 10px -3px black;
+  transition: 0.1s ease-out all;
+  /*box-shadow: -5px 0px 10px -7px black;  */
+  border: 2px solid #262626;
 }
 /* floppy label */
-.icon-floppy span {
+.icon-floppy p {
   position: fixed;
-  text-decoration: underline;
-  width: 80%;
-  height: 55%;
+  width: 76%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight:600;
   position: absolute;
-  top: 35%;
-  left: 10%;
-  height: 65%;
+  top: 38%;
+  left: 12%;
+  height: 52%;
   background: #f4f4f4;
+  color: #262626;
   z-index: 4;
   border-radius: 7px;
+  padding-top: 10%;
+  border: 2px solid #262626;
+}
+
+span:hover {
+  /*transition: color 1.0s ease;
+  color: #81b29a;*/
+  cursor: default;
 }
 
 #span-bottom {
-  background: #81b29a;
-  width: 82%;
-  top: 35%;
-  left: 9%;
-  height: 65%;
+  background: #f4f4f4;
+  width: 80%;
+  top: 40%;
+  left: 10%;
+  height: 60%;
   z-index: 3;
   position: fixed;
-  box-shadow: inset 1px 1px 10px black;
+  /*box-shadow: inset 1px 1px 10px black;*/
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border: 2px solid #262626
 }
 
-.icon-floppy span:after {
+.icon-floppy p:after {
   position:relative;
-  
   height:0.5px;
   display:block;
   content:"";
@@ -107,7 +153,7 @@ html {
   line-height:1px;
   bottom:1em;
 }
-.icon-floppy span:before {
+.icon-floppy p:before {
   position:relative;
   
   height:0.5px;
@@ -121,18 +167,22 @@ html {
 }
 /* hover slide effect */
 .icon-floppy:hover:before {
-  left: 9%;
+  left: 10%;
   margin-right:-.3em;
-  transition: box-shadow 0.3s ease all;
-  box-shadow: 5px 0px 10px -3px black;
+  /*transition: box-shadow 0.3s ease-in-out all;
+  box-shadow: 5px 0px 10px -7px black;*/
   border-bottom-left-radius: 7px;
   border-top-right-radius: 0px;  
   border-bottom-right-radius: 0px; 
   border-top-left-radius: 0px;  
+  border: 2px solid #262626;
+  transition: 0.4s ease all;
 }
 
 .icon-floppy:hover:after {
-  right: 47%;
+  right: 40%;
+  background-color: #81b29a;
+  border: 2px solid #262626;
 }
 
 /* icon wrapper for this presentation only */
@@ -142,16 +192,19 @@ padding:20% 0 20% 0;
 
 }
 /* to show the icon zoomed/enlarged */
-#outside {
-  width: 120px;
-  height: 35px;
-  background-color:#f4f4f4;
-  position: fixed;
-  top: 4%;
-  right: 28%;
-  transform: rotate(0.1turn);
-  z-index: 5;
-}
+/*#outside {
+height: 0; 
+width: 50px;
+border-bottom: 100px solid #262626;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-top: 50ps solid transparent;
+position: fixed;
+top: 6%;
+right: 31%;
+transform: rotate(32deg);
+z-index: 6;
+}*/
 
 #inside {
   width: 20px;
@@ -159,20 +212,22 @@ padding:20% 0 20% 0;
   background-color: #f4f4f4;
   position: fixed;
   top: 87%;
-  right: 2.5%;
-  box-shadow: inset 1px 1px 5px black;
+  right: 2%;
+  /*box-shadow: inset 1px 1px 3px black;*/
   z-index: 5;
+  border: 2px solid #262626;
 }
 
 #inside2 {
   width: 20px;
   height: 20px;
-  background-color:#262626;
+  background-color: #f4f4f4;
   position: fixed;
   top: 87%;
-  left: 2.5%;
-  box-shadow: inset 1px 1px 5px black;
+  left: 2%;
+  /*box-shadow: inset 1px 1px 5px black;*/
   z-index: 5;
+  border: 2px solid #262626;
 }
 
 /*#outside2 {
@@ -186,21 +241,35 @@ padding:20% 0 20% 0;
   left: 35%;
   transform: rotate(0.5turn);
   z-index: 2;
-}
-
-#outside3 {
-  height: 0; 
-  width: 30px;
-  border-bottom: 100px solid #f4f4f4;
-  border-left: 50px solid transparent;
-  border-right: 10px solid transparent;
-  position: fixed;
-  top: -8%;
-  left: 58%;
-  transform: rotate(0.5turn);
-  z-index: 1;
 }*/
 
-.name {
-  color: #f4f4f4;
+/*#outside3 {
+  height: 0; 
+  width: 25px;
+  border-bottom: 100px solid #f4f4f4;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: fixed;
+  top: 5%;
+  right: 39.5%;
+  transform: rotate(0.5turn);
+  z-index: 5;
+  
 }
+
+.print {
+  width: 50px;
+  height: 50px;
+  background: blueviolet;
+  position: absolute;
+  left: 37%;
+  top: 11%;
+  z-index: 6;
+  transition: 0.3s ease all;
+}
+
+.print:hover {
+  right: 19%;
+  margin-right: 10%;
+  transition: 0.3s ease all;
+}*/
