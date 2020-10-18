@@ -14,17 +14,17 @@ html {
   border-radius: 10px;
 }*/
 
-.icon-wrapper a {
+.icon-wrapper .back {
   text-decoration: none;
   position: fixed;
   top: 40%;
   font-weight: 600;
   left: 14%;
   color: #262626;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
-a:hover {
+.back:hover {
   transition: color 1.0s ease;
   color: #81b29a;
 }
@@ -43,22 +43,21 @@ a:hover {
   /*border: 0.5px solid #262626;*/
   border-radius: 5px; 
   /*box-shadow: 1px 0px 2px 0 #262626;*/
-  border: 2px solid #262626;
+  border: 4px solid #262626;
 }
-
 
 #bottom {
   background: #f4f4f4;
   width: 69%;
   height: 34.5%;
   position: fixed;
-  top: 0%;
+  top: -1%;
   left: 10%;
   z-index: -1;
   /*box-shadow: inset 1px 1px 10px black;*/
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  border: 2px solid #262626;
+  border: 4px solid #262626;
 }
 
 /*.icon:hover {
@@ -74,33 +73,34 @@ a:hover {
 /* floppy metal plate */
 .icon-floppy:after {
   position:absolute;
-  top: 3%;
+  top: 2%;
   background: #f4f4f4;
   height: 26%;
   width: 12%;
   right: 32%;
   content:"";
-  transition: 0.3s ease-out all;
+  transition: 0.1s ease all;
   z-index: 6;
   /*box-shadow: inset 1px 1px 10px black;*/
-  border: 2px solid #262626;
+  border: 4px solid #262626;
 }
 
 .icon-floppy:before {
   position:absolute;
-  top: -1%;
+  top: -2%;
   background-color: #f4f4f4;
   /*background-image: linear-gradient(315deg, #262626 0%, #81b29a 74%);*/
-  height: 34%;
+  height: 33.5%;
   width: 54%;
   left: 24%;
   margin-right:-.5em;
   content:"";
   border-bottom-right-radius: 7px;
   z-index: 5;
-  transition: 0.1s ease-out all;
+  
   /*box-shadow: -5px 0px 10px -7px black;  */
-  border: 2px solid #262626;
+  border: 4px solid #262626;
+  transition: 0.1s ease all;
 }
 /* floppy label */
 .icon-floppy p {
@@ -110,7 +110,7 @@ a:hover {
   font-size: 1.2rem;
   font-weight:600;
   position: absolute;
-  top: 38%;
+  top: 39%;
   left: 12%;
   height: 52%;
   background: #f4f4f4;
@@ -118,7 +118,7 @@ a:hover {
   z-index: 4;
   border-radius: 7px;
   padding-top: 10%;
-  border: 2px solid #262626;
+  border: 4px solid #262626;
 }
 
 span:hover {
@@ -130,7 +130,7 @@ span:hover {
 #span-bottom {
   background: #f4f4f4;
   width: 80%;
-  top: 40%;
+  top: 41%;
   left: 10%;
   height: 60%;
   z-index: 3;
@@ -138,7 +138,7 @@ span:hover {
   /*box-shadow: inset 1px 1px 10px black;*/
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
-  border: 2px solid #262626
+  border: 4px solid #262626
 }
 
 .icon-floppy p:after {
@@ -175,14 +175,15 @@ span:hover {
   border-top-right-radius: 0px;  
   border-bottom-right-radius: 0px; 
   border-top-left-radius: 0px;  
-  border: 2px solid #262626;
-  transition: 0.4s ease all;
+  border: 4px solid #262626;
+  transition: 0.4s ease-out all;
 }
 
 .icon-floppy:hover:after {
   right: 40%;
-  background-color: #81b29a;
-  border: 2px solid #262626;
+  background-color: #262626;
+  border: 4px solid #262626;
+  transition: 0.4s ease-out all;
 }
 
 /* icon wrapper for this presentation only */
@@ -215,19 +216,19 @@ z-index: 6;
   right: 2%;
   /*box-shadow: inset 1px 1px 3px black;*/
   z-index: 5;
-  border: 2px solid #262626;
+  border: 4px solid #262626;
 }
 
 #inside2 {
   width: 20px;
   height: 20px;
-  background-color: #f4f4f4;
+  background-color: #81b29a;
   position: fixed;
   top: 87%;
   left: 2%;
   /*box-shadow: inset 1px 1px 5px black;*/
   z-index: 5;
-  border: 2px solid #262626;
+  border: 4px solid #262626;
 }
 
 /*#outside2 {
@@ -273,3 +274,25 @@ z-index: 6;
   margin-right: 10%;
   transition: 0.3s ease all;
 }*/
+
+#cv a img {
+  position: fixed;
+  top: 35%;
+  right: 15%;
+  
+}
+
+#cv img {
+  width: 3em;
+  padding: 20px;
+}
+
+.page {
+  padding: 4px;
+}
+
+img:hover {
+  transition: background-color 1.0s ease;
+  background-color: #81b29a;
+  border-radius: 5%;
+}
