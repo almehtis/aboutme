@@ -44,13 +44,18 @@ background-color: a
 }*/
 
 
-.description {
+.description  {
   position: fixed;
   left: 2%;
-  bottom: 5%;
-  font-weight: 600;
+  bottom: 3%;
+  display: flex;
+}
+
+.description img {
+  /*font-weight: 600;
   font-size: 1.8rem;
-  color: #262626;
+  color: #262626;*/
+  padding: 7px;
 }
 
 
@@ -72,18 +77,23 @@ background-color: a
 .menu {
   position: fixed;
   right: 15%;
-  top: 5%;
+  top: 3%;
   display: flex;
   flex-direction: column;
   /*background-color: #e8cbe0;*/
 }
 
+.menu a {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 .menu img {
-  width: 2.7em;
-  margin: 10px;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 7px;
+}
+
+img {
+  width: 2.5rem;
 }
 
 /*.twitter {
@@ -98,10 +108,10 @@ background-color: a
   padding: 10%;
 }*/
 
-.menu a:hover {
+img:hover {
   transition: background-color 1.0s ease;
-  background-color: #81b29a;
-  border-radius: 5%;
+  background-color: #a594f9;
+  border-radius: 7%;
 }
 
 .empty-span {
@@ -109,10 +119,10 @@ background-color: a
   position: fixed;
   font-size: 3rem;
   top: 45%;
-  background-image: linear-gradient( #81b29a,  #81b29a);/*e5989b*/ /*#f4a261*/
+  background-image: linear-gradient( #a594f9,  #a594f9);/*e5989b*/ /*#f4a261*/ /* #b8b8ff*/
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 7px;
+  background-size: 100% 10%;
 }
 
 .empty-span {
@@ -131,15 +141,15 @@ background-color: a
 }
 
 .lines {
-  color: #81b29a/*#e5989b*/;
+  color: #a594f9/*#e5989b*/;
 }
 
-.first {
+/*.first {
   text-decoration: none;
   transition:  color 0s ease;
   /*background-color: #262626;*/
-  color: #262626;
-}
+  /*color: #262626;
+}*/
 
 
 /*.second {
@@ -153,7 +163,7 @@ background-color: a
   /*color: #262626;
 }*/
 
-.first:hover {
+/*.first:hover {
   transition:  color 1.0s ease;
   color: #81b29a;
   
@@ -162,7 +172,7 @@ background-color: a
 .second:hover {
   /*transition:  color 1.5s ease;
   color: #81b29a;*/
-  cursor: default;
-}
+  /*cursor: default;
+}*/
 
-/*background-color: #e8cbe0; */
+
