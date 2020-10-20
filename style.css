@@ -1,8 +1,8 @@
-html {
+* {
   box-sizing: border-box;
-  font-family: "Century Gothic"; /* Имя шрифта */
-  src: url(fonts/GOTHIC.TTF);
-  }
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 
 
 /*@media screen and (max-width: 768px) {
@@ -36,6 +36,7 @@ body {
   color: #262626;
 }
 
+
 /*#wrapper {
   display: flex;
   justify-content: space-between;
@@ -47,26 +48,34 @@ background-color: a
 .description  {
   position: fixed;
   left: 2%;
-  bottom: 3%;
+  bottom: 0%;
   display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #262626;
+  
 }
 
-.description img {
+.description a {
   /*font-weight: 600;
   font-size: 1.8rem;
   color: #262626;*/
-  padding: 7px;
+  color: #262626;
 }
 
+.description a:hover {
+  transition: color 1.0s ease;
+  color: #a594f9;
+}
 
 .name {
-  font-size: 3rem;
+  font-size: 3.5rem;
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2%;
-  font-weight: 900;
+  font-weight: 600;
   color: #262626;
 }
 
@@ -93,7 +102,7 @@ background-color: a
 }
 
 img {
-  width: 2.5rem;
+  width: 3.5em;
 }
 
 /*.twitter {
@@ -115,14 +124,17 @@ img:hover {
 }
 
 .empty-span {
-  color: #f4f4f4;
-  position: fixed;
+  color:#a594f9;
+  /*position: fixed;
   font-size: 3rem;
   top: 45%;
   background-image: linear-gradient( #a594f9,  #a594f9);/*e5989b*/ /*#f4a261*/ /* #b8b8ff*/
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 10%;
+  height: 15px;
+  position: fixed;
+  top: 50%;
+  font-weight: 600;
 }
 
 .empty-span {
@@ -141,7 +153,10 @@ img:hover {
 }
 
 .lines {
+  font-size: 4rem;;
+  font-weight: 600;
   color: #a594f9/*#e5989b*/;
+  
 }
 
 /*.first {
